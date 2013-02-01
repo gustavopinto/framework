@@ -6,12 +6,13 @@
 	<title>Resource Bundle</title>
 
 	<para>
-		Um dos requisitos para se construir uma aplicação nos dias de hoje, é o de que seja utilizada por pessoas
+		Nos dias de hoje, um dos principais requisitos para se construir uma aplicação, é de que esta seja utilizada por pessoas
 		em vários lugares no mundo e em diferentes línguas. Portanto, é preciso que as aplicações sejam facilmente 
 		internacionalizáveis. Para isso, existe um recurso no java chamado de <emphasis>Resource Bundle</emphasis>,
-		que nada mais é do que um esquema de arquivos <filename>properties</filename>, onde cada arquivo representa
-		uma língua e cada um desses arquivos possui um conjunto de chaves e valores, sendo que os valores são os textos
-		que serão exibidos na aplicação e estão na língua correspondente à língua que o arquivo representa. 
+		que nada mais é do que um esquema de arquivos <filename>properties</filename>, cujo, para cada língua, um arquivo
+		diferente deve ser criado, e para cada um desses arquivos existe um conjunto de chaves e valores. Os valores 
+		representam o conteúdo dos textos que serão exibidos na aplicação, e que que correspondem à língua que o arquivo representa. 
+		A chave, por sua vez, é o nome  qual o desenvolvedor deve referenciar para utilizar o texto na aplicação.
 	</para>
 	<para>
 		O arquivo <filename>properties</filename> que será utilizado para montar a aplicação é escolhido pelo próprio
@@ -25,9 +26,9 @@
 	</para>
 	<para>
 		Todos os arquivos são criados praticamente com o mesmo nome. O que diferencia um arquivo do outro é o acréscimo
-		da sigla que representa a língua daquele arquivo. O arquivo que representa a língua default não tem essa sigla
-		ao fim do nome. Seguindo o exemplo citado acima e imaginando que o nome dos nossos arquivos é messages, ficaria 
-		da seguinte forma: <filename>messages.properties</filename> seria o arquivo default que representaria a língua
+		da sigla que representa a língua daquele arquivo. No entanto, o arquivo que representa a língua default não 
+		necessida da sigla no fim do nome. Seguindo o exemplo citado acima e imaginando que o nome dos nossos arquivos é messages, 
+		ficaria da seguinte forma: <filename>messages.properties</filename> seria o arquivo default que representaria a língua
 		inglesa e <filename>messages_pt.properties</filename> seria o arquivo da língua portuguesa. Veja abaixo um
 		exemplo com esses dois arquivos.  
 	</para>
